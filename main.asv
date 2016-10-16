@@ -30,9 +30,9 @@ set(ax(2),'xscale','log','yscale','log',...
 legend('T/T_0', 'p/p_0', 'A/A_t', 'Location', 'northwest');
     
 for i=2:length(k)
-    plot(ax(1),M, T_over_T0(i,:),'color',[0      0.4470 0.7410],'Linewidth',i);
-    plot(ax(1),M, p_over_p0(i,:),'color',[0.8500 0.3250 0.0980],'Linewidth',i);
-    plot(ax(2),M, A_over_At(i,:),'color',[0.9290 0.6940 0.1250],'Linewidth',i);
+    plot(ax(1),M, T_over_T0(i,:),'color',[0      0.4470 0.7410 *]);
+    plot(ax(1),M, p_over_p0(i,:),'color',[0.8500 0.3250 0.0980]);
+    plot(ax(2),M, A_over_At(i,:),'color',[0.9290 0.6940 0.1250]);
     set(ax(1),'xscale','log','yscale','log',...
         'XLim',[M(1) M(length(M))],...
         'YLim',[0.01 10],'YTick',[0.01 0.1 1 10]);
